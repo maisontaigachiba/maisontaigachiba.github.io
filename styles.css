@@ -5,6 +5,20 @@ body {
     height: 100%;
     margin: 0;
 }
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50; /* フォーカス時の色 */
+    outline: none;
+}
 .container {
     height: 100%;
     position: relative;
@@ -17,7 +31,7 @@ justify-content: center;
     width: 800px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10px;
     position: relative;
 }
 
@@ -44,7 +58,7 @@ justify-content: center;
 .hidden-element {
     display: none;
     position: absolute;
-    top: 100px;
+    top: 10px;
     /* left: 0; */
     background-color: #fff;
     border: 1px solid #000;
@@ -69,4 +83,29 @@ justify-content: center;
     font-size: 30px;
     position: absolute;
     cursor: pointer;
-    }
+}
+
+/* ボタンのスタイル */
+.input-button {
+    background-color: #4CAF50; /* グリーン */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* ボタンの無効化スタイル */
+.input-button:disabled {
+    background-color: #cccccc; /* グレー */
+    cursor: not-allowed;
+}
+
+.inputButonArea {
+    margin: 25px
+}
