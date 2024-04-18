@@ -58,14 +58,15 @@ justify-content: center;
 }
 .hidden-element {
     display: none;
-    position: absolute;
-    top: 10px;
+    /* position: absolute; */
+    position: fixed;
+    top: 10%;
     /* left: 0; */
     background-color: #fff;
     border: 1px solid #000;
     padding: 20px;
     z-index: 9999;
-    height: 50%;
+    height: 80%;
     background-color: whitesmoke;
 
     width: 75%;

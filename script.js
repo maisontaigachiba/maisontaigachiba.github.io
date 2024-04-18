@@ -18,7 +18,7 @@ var closing = {
 var whatService = {
     id: "whatService",
     title: "どんなサービス？",
-    content: "弊社クラウドテックでは、他社と比べても母数の大きい600万のデータベースからフリーランスの方をご提案可能です。<br>またエージェントとしての知見もありますので、市況感や、他社さんがどのように活用されているか等もお伝え出来ます。"
+    content: "弊社<span id='output'></span>では、他社と比べても母数の大きい600万のデータベースからフリーランスの方をご提案可能です。<br>またエージェントとしての知見もありますので、市況感や、他社さんがどのように活用されているか等もお伝え出来ます。"
 }
 var busyNow = {
     id: "busyNow",
@@ -53,7 +53,7 @@ var aboutContract = {
 var recruitmentWell = {
     id: "recruitmentWell",
     title: "採用は順調に進んでいる",
-    content: "順調でいらっしゃるんですね！<br>クラウドテックは最短3日で稼働開始の実績もあるので、<br>不測の事態に備えて、一度サービスをご説明するお時間頂ければと思うのですが(日時打診へ)"
+    content: "順調でいらっしゃるんですね！<br><span id='output'></span>は最短3日で稼働開始の実績もあるので、<br>不測の事態に備えて、一度サービスをご説明するお時間頂ければと思うのですが(日時打診へ)"
 }
 var notRecruitment = {
     id: "notRecruitment",
@@ -98,7 +98,7 @@ var howMuchFee = {
 var payingSite = {
     id: "payingSite",
     title: "支払いサイクルはどうなってる？",
-    content: "ありがとうございます。<br>クラウドテックとしては基本30日サイトで提供させて頂いております。<br>(月末に支払い頂く形)<br>但し弊社グループの人材サービスも複数展開しておりますので、そちらであれば変更可能でございます。<br>（直接契約できるテックダイレクトとかワーカーと相談し変更可能）"
+    content: "ありがとうございます。<br><span id='output'></span>としては基本30日サイトで提供させて頂いております。<br>(月末に支払い頂く形)<br>但し弊社グループの人材サービスも複数展開しておりますので、そちらであれば変更可能でございます。<br>（直接契約できるTDとかワーカーと相談し変更可能）"
 }
 
 // 表示する要素の配列
@@ -162,8 +162,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function displayText() {
     companyName = document.getElementById("inputField").value;
-    var outputDiv = document.getElementById("output");
-    outputDiv.textContent = companyName;
+    // var outputDiv = document.getElementById("output");
+    // outputDiv.textContent = companyName;
 }
 
 document.addEventListener("DOMContentLoaded", function() {
